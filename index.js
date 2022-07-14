@@ -1,4 +1,4 @@
-// Выбираем все элементы на страницы (на выходе получаем коллекцию элементов, именно коллекцию, а не массив)
+// Выбираем все элементы на страницы (на выходе получаем NodeList, псевдомассив, а не массив)
 
 const spoiller = document.querySelectorAll(".spoiller-content");
 
@@ -14,4 +14,6 @@ const spoiller = document.querySelectorAll(".spoiller-content");
 
 // Второй вариант решения в одну строчку с помощью метода перебора foreach, который работает с коллекциями
 
-spoiller.forEach(item => item.addEventListener("click", () => item.classList.toggle("active")));
+spoiller.forEach((item) =>
+  item.addEventListener("click", () => item.classList.toggle("active")),
+);
