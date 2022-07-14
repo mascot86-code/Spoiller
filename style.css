@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green: #02818A;
+  --light-gray: #E6E6E6;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 64px;
+  margin-bottom: 88px;
+}
+
+.spoiller {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.spoiller-content {
+  border-top: 1px solid var(--light-gray);
+  padding: 23px 0;
+}
+
+.spoiller-content:last-child {
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.label {
+  position: relative;
+  cursor: pointer;
+  margin: 10px 0;
+  font-size: 1.6875rem;
+  font-weight: 400;
+  color: var(--green);
+}
+
+.spoiller .spoiller-content .label::before {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--green);
+}
+
+.spoiller .spoiller-content.active .label::before {
+  content: '\00D7';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--green);
+}
+
+.spoiller .spoiller-content {
+  position: relative;
+}
+
+.content {
+  max-width: 840px;
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 0.9375rem;
+}
+
+.spoiller .spoiller-content.active .content {
+  height: auto;
+}
+
+.content p:nth-child(even) {
+  margin: 10px 0;
+}
+
+@media (max-width: 1280px) {
+  .label {
+    font-size: 1.5rem;
+  }
+
+  .content {
+    max-width: 640px;
+  }
+
+  h2 {
+    font-size: 2.625rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    max-width: 612px;
+  }
+
+  .spoiller .spoiller-content .label::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-57%);
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--green);
+  }
+
+  h2 {
+    font-size: 2.625rem;
+  }
+
+}
+
+@media (min-width: 375px) and (max-width: 400px) {
+  .content {
+    max-width: 612px;
+  }
+
+  .label {
+    font-size: 1rem;
+  }
+
+  .spoiller .spoiller-content .label::before {
+    content: '+';
+    position: absolute;
+    top: 30%;
+    right: -10px;
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--green);
+  }
+
+  .spoiller .spoiller-content.active .label::before {
+    content: '\00D7';
+    position: absolute;
+    top: 20%;
+    right: -10px;
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--green);
+  }
+
+  h2 {
+    font-size: 2.625rem;
+  }
+}
