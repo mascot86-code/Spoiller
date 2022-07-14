@@ -29,7 +29,7 @@ h2 {
 
 .spoiller-content {
   border-top: 1px solid var(--light-gray);
-  padding: 23px 0;
+  padding: 40px 0;
 }
 
 .spoiller-content:last-child {
@@ -39,7 +39,6 @@ h2 {
 .label {
   position: relative;
   cursor: pointer;
-  margin: 10px 0;
   font-size: 1.6875rem;
   font-weight: 400;
   color: var(--green);
@@ -84,6 +83,7 @@ h2 {
 }
 
 .spoiller .spoiller-content.active .content {
+  margin-top: 45px;
   height: auto;
 }
 
@@ -102,6 +102,11 @@ h2 {
 
   h2 {
     font-size: 2.625rem;
+  }
+
+  .spoiller .spoiller-content.active .content {
+    margin-top: 25px;
+    height: auto;
   }
 }
 
@@ -123,6 +128,11 @@ h2 {
 
   h2 {
     font-size: 2.625rem;
+  }
+
+  .spoiller .spoiller-content.active .content {
+    margin-top: 25px;
+    height: auto;
   }
 
 }
@@ -158,5 +168,10 @@ h2 {
 
   h2 {
     font-size: 2.625rem;
+  }
+
+  .spoiller .spoiller-content.active .content {
+    margin-top: 25px;
+    height: auto;
   }
 }
