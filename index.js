@@ -17,3 +17,6 @@ const spoiller = document.querySelectorAll(".spoiller-content");
 spoiller.forEach((item) =>
   item.addEventListener("click", () => item.classList.toggle("active")),
 );
+
+
+// Третий вариант можно было сделать через nextElementSibling
