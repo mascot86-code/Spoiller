@@ -30,7 +30,7 @@ h2 {
 
 .spoiller-content {
   border-top: 1px solid var(--light-gray);
-  padding: 40px 0;
+  padding: 28px 0;
 }
 
 .spoiller-content:last-child {
@@ -51,8 +51,8 @@ h2 {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 2.5rem;
+  font-weight: 100;
   color: var(--green);
 }
 
@@ -67,8 +67,8 @@ h2 {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 2.5rem;
+  font-weight: 100;
   color: var(--green);
 }
 
@@ -89,7 +89,7 @@ h2 {
 }
 
 .spoiller .spoiller-content.active .content {
-  margin-top: 45px;
+  margin-top: 20px;
   height: auto;
 }
 
